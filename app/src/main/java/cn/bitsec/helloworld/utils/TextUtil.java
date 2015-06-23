@@ -5,6 +5,6 @@ package cn.bitsec.helloworld.utils;
  */
 public class TextUtil {
     public String myTextView() {
-        return "My text view@!";
+        return "My text view@!\n i need you!!!";
     }
 }
