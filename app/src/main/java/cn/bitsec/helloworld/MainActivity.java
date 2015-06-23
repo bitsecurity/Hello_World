@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         tv.setText(textUtil.myTextView());
 
         for (int counter = 0; counter < 10; counter++) {
-            Log.i("MainActivity", "My Message" + counter);
+            Log.i("MainActivity", "My Message " + counter);
         }
     }
 
