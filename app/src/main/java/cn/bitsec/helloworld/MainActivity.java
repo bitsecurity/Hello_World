@@ -1,9 +1,13 @@
 package cn.bitsec.helloworld;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import cn.bitsec.helloworld.utils.TextUtil;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextUtil textUtil = new TextUtil();
+
+        TextView tv = (TextView) findViewById(R.id.myTextView);
+        tv.setText(textUtil.myTextView());
+
+        for (int counter = 0; counter < 10; counter++) {
+            Log.i("MainActivity", "My Message" + counter);
+        }
     }
 
     @Override
